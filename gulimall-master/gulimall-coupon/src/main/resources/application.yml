@@ -1,0 +1,19 @@
+server:
+  port: 50000
+  servlet:
+    session:
+      timeout: 30m
+spring:
+  application:
+    name: gulimall-coupon
+  datasource:
+    name: root
+    password: root
+    url: jdbc:mysql://192.168.126.129:3306/gulimall_sms?useSSL=true&enabledTLSProtocols=TLSv1.2&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto
